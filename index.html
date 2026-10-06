@@ -1,24 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Best Online Shopping in Nepal - Neshop Marketplace</title>
-    <meta name="description"
-        content="Neshop is an online shopping marketplace in Nepal connecting customers with local sellers. Explore 0% seller commission portal and Neshop Partner Program.">
+    <meta name="description" content="Neshop is the premier online shopping marketplace in Nepal, connecting customers directly with local sellers. Enjoy 0% seller commission and a wide variety of products.">
+    <meta name="keywords" content="online shopping Nepal, buy online Kathmandu, ecommerce Nepal, Neshop, online marketplace Nepal, sell online Nepal">
     <link rel="canonical" href="https://neshop.com.np/">
+    <meta property="og:title" content="Best Online Shopping in Nepal - Neshop Marketplace">
+    <meta property="og:description" content="Discover Neshop, Nepal's growing online marketplace. Shop from local vendors or start selling with 0% commission.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://neshop.com.np/">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --bg-color: #0d1117;
-            --card-bg: #161b22;
-            --text-color: #c9d1d9;
-            --heading-color: #ffffff;
-            --accent-color: #58a6ff;
-            --border-color: #30363d;
+            --bg-color: #09090b;
+            --card-bg: #18181b;
+            --text-color: #a1a1aa;
+            --heading-color: #f4f4f5;
+            --accent-color: #3b82f6;
+            --accent-hover: #60a5fa;
+            --border-color: #27272a;
+            --gradient-start: #3b82f6;
+            --gradient-end: #8b5cf6;
         }
 
         * {
@@ -31,112 +38,277 @@
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
             background-color: var(--bg-color);
             color: var(--text-color);
-            line-height: 1.6;
-            padding: 40px 20px;
+            line-height: 1.7;
+            padding: 0;
+            overflow-x: hidden;
         }
 
-        .container {
+        header {
+            background: linear-gradient(to bottom, rgba(24, 24, 27, 0.8), rgba(9, 9, 11, 1));
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .header-content {
             max-width: 800px;
             margin: 0 auto;
-            background: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 12px;
-            padding: 40px;
+        }
+
+        .gradient-text {
+            background: linear-gradient(to right, var(--gradient-start), var(--gradient-end));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
         }
 
         h1 {
-            font-size: 2rem;
+            font-size: 2.8rem;
             color: var(--heading-color);
-            margin-bottom: 20px;
-            line-height: 1.3;
+            margin-bottom: 16px;
+            line-height: 1.2;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--text-color);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 40px;
+            margin-bottom: 32px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        
+        section:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px -10px rgba(0,0,0,0.5);
         }
 
         h2 {
-            font-size: 1.35rem;
+            font-size: 1.8rem;
             color: var(--heading-color);
-            margin-top: 28px;
-            margin-bottom: 12px;
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 8px;
+            margin-bottom: 20px;
+            font-weight: 600;
+            letter-spacing: -0.01em;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        h3 {
+            font-size: 1.3rem;
+            color: var(--heading-color);
+            margin: 24px 0 12px 0;
+            font-weight: 500;
         }
 
         p {
-            margin-bottom: 16px;
-            font-size: 1.05rem;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            font-weight: 300;
         }
 
         ul {
-            margin: 0 0 20px 24px;
+            margin: 0 0 24px 24px;
         }
 
         li {
-            margin-bottom: 8px;
-            font-size: 1rem;
+            margin-bottom: 12px;
+            font-size: 1.05rem;
+            padding-left: 8px;
+        }
+        
+        li::marker {
+            color: var(--accent-color);
         }
 
         a {
             color: var(--accent-color);
-            font-weight: 600;
+            font-weight: 500;
             text-decoration: none;
+            transition: color 0.2s ease;
+            position: relative;
         }
 
         a:hover {
-            text-decoration: underline;
+            color: var(--accent-hover);
+        }
+        
+        a::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 1px;
+            bottom: 0;
+            left: 0;
+            background-color: var(--accent-hover);
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+        }
+        
+        a:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
         }
 
-        @media (max-width: 600px) {
-            .container {
+        .cta-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+            color: white !important;
+            padding: 12px 28px;
+            border-radius: 8px;
+            font-weight: 600;
+            margin-top: 10px;
+            border: none;
+            cursor: pointer;
+            text-decoration: none !important;
+            box-shadow: 0 4px 14px 0 rgba(59, 130, 246, 0.39);
+        }
+        
+        .cta-btn::after {
+            display: none;
+        }
+        
+        .cta-btn:hover {
+            box-shadow: 0 6px 20px rgba(59, 130, 246, 0.23);
+            transform: translateY(-1px);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 24px;
+            margin-top: 30px;
+        }
+        
+        .feature-card {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid var(--border-color);
+            padding: 24px;
+            border-radius: 12px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            border-top: 1px solid var(--border-color);
+            margin-top: 60px;
+            color: #71717a;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            section {
                 padding: 24px;
             }
-
-            h1 {
-                font-size: 1.6rem;
+            .container {
+                margin: 20px auto;
             }
         }
     </style>
 </head>
-
 <body>
 
+    <header>
+        <div class="header-content">
+            <h1><span class="gradient-text">Best Online Shopping</span> in Nepal</h1>
+            <p class="subtitle">Experience the ultimate convenience of buying and selling online with Neshop, Nepal's most innovative e-commerce marketplace.</p>
+        </div>
+    </header>
+
     <main class="container">
-        <section class="neshop-section">
-            <h1>Best Online Shopping in Nepal</h1>
+        
+        <section id="about-neshop">
+            <h2>Welcome to Neshop Marketplace</h2>
             <p>
-                <strong><a href="https://neshop.com.np/">Neshop online shopping</a></strong> is a marketplace in Nepal
-                where customers can discover and shop for products from different sellers. Built to offer convenience
-                and variety, Neshop connects shoppers directly with local merchants across Nepal in a unified digital
-                marketplace.
+                <strong><a href="https://neshop.com.np/">Neshop online shopping</a></strong> is rapidly emerging as the go-to digital marketplace in Nepal. We bridge the gap between enthusiastic consumers and quality local merchants. By leveraging modern technology, Neshop offers a seamless, reliable, and secure online shopping experience tailored specifically for the Nepalese market.
             </p>
-
-            <h2>Neshop Features</h2>
-            <p>Key features of the Neshop marketplace include:</p>
-            <ul>
-                <li>Online shopping from multiple product categories</li>
-                <li>Products from local sellers and suppliers</li>
-                <li>Convenient product discovery and ordering</li>
-                <li>Seller-focused marketplace ecosystem</li>
-                <li>Availability across Nepal</li>
-                <li>Simple and user-friendly shopping experience</li>
-            </ul>
-
-            <h2>Neshop Seller / Supplier Portal</h2>
             <p>
-                Neshop provides a dedicated seller and supplier portal for businesses and individual merchants who want
-                to sell products online. A key benefit of the platform is <strong>0% commission for sellers</strong>,
-                allowing merchants to use the <strong><a href="https://neshop.com.np/supplier">Neshop Seller
-                        Portal</a></strong> to list and manage their items without paying standard marketplace
-                commission fees.
-            </p>
-
-            <h2>Neshop Partner Program </h2>
-            <p>
-                The <strong><a href="https://neshop.com.np/partner">Neshop Partner Program</a></strong> provides an
-                opportunity for partners, creators, and promoters to share Neshop with their audience and earn through
-                the program.
+                Whether you reside in the bustling streets of Kathmandu, the scenic valleys of Pokhara, or anywhere else across the nation, Neshop ensures that a world of products is just a click away. Our mission is to digitize local commerce and provide unparalleled value to both buyers and sellers.
             </p>
         </section>
+
+        <section id="key-features">
+            <h2>Why Choose Neshop for Your Shopping Needs?</h2>
+            <p>The e-commerce landscape in Nepal is evolving, and Neshop is at the forefront. Here is what makes our platform stand out:</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Extensive Variety</h3>
+                    <p>Shop from diverse categories including electronics, fashion, home appliances, groceries, and beauty products—all in one unified app.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Local Empowerment</h3>
+                    <p>By purchasing on Neshop, you directly support local Nepalese vendors, SMEs, and home-based entrepreneurs.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Seamless Experience</h3>
+                    <p>Our intuitive user interface ensures that discovering products, adding them to your cart, and checking out is effortless and fast.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="seller-portal">
+            <h2>Empowering Merchants: 0% Commission Seller Portal</h2>
+            <p>
+                Are you a business owner, a wholesaler, or an individual creator looking to expand your reach? The traditional e-commerce model eats into your profits with heavy margins. Neshop disrupts this with a revolutionary approach.
+            </p>
+            <p>
+                We offer a <strong>0% commission structure</strong> for all registered sellers. This means you keep what you earn. The <strong><a href="https://neshop.com.np/supplier">Neshop Seller Portal</a></strong> provides powerful tools for inventory management, order tracking, and customer engagement.
+            </p>
+            <ul>
+                <li><strong>Free Registration:</strong> Quick and easy onboarding process for vendors.</li>
+                <li><strong>Direct Customer Access:</strong> Build your own brand identity within the Neshop ecosystem.</li>
+                <li><strong>Transparent Analytics:</strong> Track your sales and store performance in real-time.</li>
+            </ul>
+            <a href="https://neshop.com.np/supplier" class="cta-btn">Start Selling Today</a>
+        </section>
+
+        <section id="partner-program">
+            <h2>Grow Together: The Neshop Partner Program</h2>
+            <p>
+                The <strong><a href="https://neshop.com.np/partner">Neshop Partner Program</a></strong> is designed for affiliates, content creators, marketers, and community leaders who want to monetize their influence. 
+            </p>
+            <p>
+                By sharing Neshop's vision and referring customers or new sellers to the platform, partners can earn lucrative rewards. We believe in collaborative growth, and our partner ecosystem is built to ensure that when Neshop succeeds, you succeed.
+            </p>
+            <a href="https://neshop.com.np/partner" class="cta-btn">Join the Partner Program</a>
+        </section>
+
+        <section id="ecommerce-nepal">
+            <h2>The Future of E-commerce in Nepal</h2>
+            <p>
+                Online shopping in Nepal has seen tremendous growth over the past few years. With increasing internet penetration and smartphone usage, platforms like Neshop are crucial in transitioning traditional retail to digital commerce.
+            </p>
+            <p>
+                From secure digital payments (integrating with local wallets like eSewa, Khalti, and mobile banking) to reliable nationwide delivery logistics, Neshop is continually innovating to solve the unique challenges of the Nepalese market. We are not just an e-commerce site; we are a community-driven digital economy.
+            </p>
+        </section>
+
     </main>
 
-</body>
+    <footer>
+        <p>&copy; 2026 Neshop Marketplace. Empowering Online Shopping in Nepal.</p>
+        <p>Visit the official site: <a href="https://neshop.com.np/">neshop.com.np</a></p>
+    </footer>
 
+</body>
 </html>
